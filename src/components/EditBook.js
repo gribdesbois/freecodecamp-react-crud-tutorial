@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
+import BooksContext from '../context/BooksContext'
 import BookForm from './BookForm'
 
-const EditBook = ({ history, books, setBooks }) => {
+const EditBook = ({ history }) => {
   const { id } = useParams()
+  const { books, setBooks } = useContext(BooksContext)
   const bookToEdit = books.find((book) => book.id !== id)
 
   const handleOnSubmit = (book) => {
