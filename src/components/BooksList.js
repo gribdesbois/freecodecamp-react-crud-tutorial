@@ -16,7 +16,6 @@ const BooksList = ({ books, setBooks }) => {
           ))
         ) : (
           <p className='message'>No books available. Please add some books</p>
-
         )}
       </div>
     </>

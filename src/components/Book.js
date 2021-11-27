@@ -9,7 +9,7 @@ const Book = ({
   quantity,
   date,
   handleRemoveBook,
-}) => {
+}) => (
   <Card style={{ width: '18rem' }} className='book'>
     <Card.Body>
       <Card.Title className='book-title'>{bookname}</Card.Title>
@@ -25,5 +25,5 @@ const Book = ({
       </Button>
     </Card.Body>
   </Card>
-}
+)
 export default Book
